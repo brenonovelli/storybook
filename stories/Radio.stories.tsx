@@ -9,8 +9,9 @@ export default {
 
 export const Group = () => {
   const options = [
-    { id: 1, value: "Alpha" },
-    { id: 2, value: "Beta" },
+    { id: 1, value: "React" },
+    { id: 2, value: "Typescript" },
+    { id: 3, value: "Storybook" },
   ];
 
   const [option, setOption] = useState(options[1].id);

@@ -1,4 +1,10 @@
-🚧 [on going] || Storybook study project.
+<p align="center">
+  <img src="./.github/logo-storybook.svg" width="200" alt="Logo Storyook" />
+  <br />
+  Storybook study project.
+</p>
+
+My playground to practice Storybook resources.
 
 # Start Development Environment
 

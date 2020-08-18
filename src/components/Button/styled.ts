@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { darken, desaturate, lighten, readableColor } from "polished";
+import {
+  darken,
+  desaturate,
+  lighten,
+  readableColor,
+  transparentize,
+} from "polished";
 
 import { Props } from "./index";
 
@@ -10,7 +16,7 @@ export const Container = styled.button<Props>`
     props.outlined ? `2px solid ${props.backgroundColor}` : "none"};
 
   color: ${({ color }: Props) =>
-    readableColor(color as string, "#fff", "#011016")};
+    readableColor(color as string, "#abbebe", "#011016")};
   font-weight: bold;
   text-transform: uppercase;
 
@@ -30,7 +36,7 @@ export const Container = styled.button<Props>`
 
   &:hover {
     :not(:disabled) {
-      box-shadow: 0px 8px 8px rgba(#011016, 0.25);
+      box-shadow: 0px 8px 8px ${transparentize(0.25, "#011016")};
       border-color: transparent;
       background-color: ${(props) =>
         props.outlined
@@ -41,7 +47,7 @@ export const Container = styled.button<Props>`
 
   :active {
     :not(:disabled) {
-      box-shadow: 0px 8px 8px rgba(#011016, 0.25);
+      box-shadow: 0px 8px 8px ${transparentize(0.25, "#011016")};
       background-color: ${(props) =>
         darken(0.03, props.backgroundColor as string)};
     }

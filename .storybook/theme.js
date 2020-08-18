@@ -12,7 +12,7 @@ export default create({
   textColor: "#fff",
 
   // Toolbar default and active colors
-  barTextColor: "#bebaab",
+  barTextColor: "#abbabe",
   barSelectedColor: "#ffffff",
   barBg: "#011026",
 

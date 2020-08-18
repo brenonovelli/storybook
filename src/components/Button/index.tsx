@@ -10,6 +10,7 @@ export interface Props {
   color?: string;
   outlined?: boolean;
   disabled?: boolean;
+  onClick?: () => void;
 }
 
 export const Button: React.FC<Props> = ({
